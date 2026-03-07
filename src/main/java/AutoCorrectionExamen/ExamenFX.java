@@ -36,12 +36,10 @@ public class ExamenFX extends Application {
     public void start(Stage primaryStage) {
         examenEnCours = GestionBaseDonnees.chargerExamenDepuisDB();
 
-        // Conteneur principal avec style moderne
         BorderPane root = new BorderPane();
         root.getStyleClass().add("root-container");
         root.setPadding(new Insets(30, 40, 30, 40));
 
-        // Titre de l'examen
         Label titreExamen = new Label("Examen POO");
         titreExamen.getStyleClass().add("exam-title");
 
@@ -50,44 +48,37 @@ public class ExamenFX extends Application {
         topContainer.setPadding(new Insets(0, 0, 20, 0));
         root.setTop(topContainer);
 
-        // Carte contenant la question (effet de carte moderne)
         VBox questionCard = new VBox(25);
         questionCard.getStyleClass().add("question-card");
         questionCard.setAlignment(Pos.TOP_LEFT);
         questionCard.setPadding(new Insets(30));
         VBox.setVgrow(questionCard, Priority.ALWAYS);
 
-        // Configuration du label d'énoncé
         labelEnonce.setWrapText(true);
         labelEnonce.setTextAlignment(TextAlignment.LEFT);
         labelEnonce.getStyleClass().add("question-label");
         labelEnonce.setMaxWidth(Double.MAX_VALUE);
 
-        // Zone de réponse avec espacement
         zoneReponse.setSpacing(18);
         zoneReponse.setPadding(new Insets(15, 0, 0, 0));
 
         questionCard.getChildren().addAll(labelEnonce, zoneReponse);
 
-        // Wrapper pour centrer la carte
         StackPane centerWrapper = new StackPane(questionCard);
         centerWrapper.setPadding(new Insets(20, 0, 20, 0));
         root.setCenter(centerWrapper);
 
-        // Zone de navigation avec styles
         HBox navigationBox = new HBox(20);
         navigationBox.getStyleClass().add("navigation-box");
         navigationBox.setAlignment(Pos.CENTER);
         navigationBox.setPadding(new Insets(25, 30, 25, 30));
 
-        // Application des styles aux boutons
         btnPrecedent.getStyleClass().addAll("modern-button", "button-previous");
         btnSuivant.getStyleClass().add("modern-button");
 
         navigationBox.getChildren().addAll(btnPrecedent, btnSuivant);
         root.setBottom(navigationBox);
 
-        // Gestionnaires d'événements (LOGIQUE INTACTE)
         btnSuivant.setOnAction(e -> {
 
             Question qActuelle = examenEnCours.getQuestion(indexQuestion);
@@ -139,7 +130,6 @@ public class ExamenFX extends Application {
 
         chargerQuestion();
 
-        // Création de la scène avec chargement du CSS
         Scene scene = new Scene(root, 750, 600);
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
 
