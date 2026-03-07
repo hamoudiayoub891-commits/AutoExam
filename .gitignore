@@ -9,3 +9,11 @@ target/
 
 # Autres (Others)
 *.log
+# Ignorer les anciens packages et TP
+src/main/java/com/
+# Fichiers de modélisation et sauvegardes
+*.mdzip
+*.bak
+
+# Fichiers générés par l'application
+bulletin_notes.txt

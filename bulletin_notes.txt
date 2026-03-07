@@ -1,6 +1,0 @@
-Étudiant : ayoub hamoudi        | Note : 20.00/20 | Date : 10/01/2026 10:51
-Étudiant : ayoub hamoudi        | Note : 20.00/20 | Date : 28/01/2026 13:14
-Étudiant :                      | Note : 20.00/20 | Date : 12/02/2026 13:29
-Étudiant :                      | Note : 15.00/20 | Date : 12/02/2026 13:31
-Étudiant :                      | Note : 15.00/20 | Date : 12/02/2026 13:32
-Étudiant :                      | Note : 20.00/20 | Date : 04/03/2026 10:34
