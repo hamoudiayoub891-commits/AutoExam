@@ -1,0 +1,232 @@
+/* ============================================
+   PALETTE DE COULEURS MODERNES
+   ============================================ */
+* {
+    -fx-primary: #1E88E5;
+    -fx-primary-dark: #1565C0;
+    -fx-success: #43A047;
+    -fx-error: #E53935;
+    -fx-warning: #FB8C00;
+    -fx-background: #F5F7FA;
+    -fx-surface: #FFFFFF;
+    -fx-text-primary: #212121;
+    -fx-text-secondary: #757575;
+    -fx-border-light: #E0E0E0;
+}
+
+/* ============================================
+   CONTENEUR PRINCIPAL
+   ============================================ */
+.root-container {
+    -fx-background-color: -fx-background;
+}
+
+/* ============================================
+   TITRES ET LABELS
+   ============================================ */
+.exam-title {
+    -fx-font-family: 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-primary-dark;
+    -fx-padding: 0 0 20 0;
+}
+
+.question-label {
+    -fx-font-family: 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -fx-text-primary;
+    -fx-padding: 10 0 10 0;
+    -fx-line-spacing: 1.5;
+}
+
+/* ============================================
+   CARTE DE QUESTION (CONTENEUR)
+   ============================================ */
+.question-card {
+    -fx-background-color: -fx-surface;
+    -fx-background-radius: 12px;
+    -fx-padding: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 15, 0, 0, 2);
+}
+
+/* ============================================
+   BOUTONS
+   ============================================ */
+.modern-button {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 12 28 12 28;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(30, 136, 229, 0.3), 8, 0, 0, 2);
+}
+
+.modern-button:hover {
+    -fx-background-color: -fx-primary-dark;
+    -fx-effect: dropshadow(gaussian, rgba(30, 136, 229, 0.5), 12, 0, 0, 3);
+    -fx-scale-y: 1.02;
+    -fx-scale-x: 1.02;
+}
+
+.modern-button:pressed {
+    -fx-background-color: derive(-fx-primary-dark, -10%);
+    -fx-effect: dropshadow(gaussian, rgba(30, 136, 229, 0.2), 5, 0, 0, 1);
+}
+
+.modern-button:disabled {
+    -fx-background-color: #BDBDBD;
+    -fx-text-fill: #FFFFFF;
+    -fx-opacity: 0.6;
+    -fx-effect: none;
+    -fx-cursor: default;
+}
+
+.button-previous {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primary;
+    -fx-border-color: -fx-primary;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-effect: none;
+}
+
+.button-previous:hover {
+    -fx-background-color: rgba(30, 136, 229, 0.1);
+    -fx-effect: none;
+}
+
+.button-finish {
+    -fx-background-color: -fx-error;
+    -fx-effect: dropshadow(gaussian, rgba(229, 57, 53, 0.3), 8, 0, 0, 2);
+}
+
+.button-finish:hover {
+    -fx-background-color: derive(-fx-error, -10%);
+    -fx-effect: dropshadow(gaussian, rgba(229, 57, 53, 0.5), 12, 0, 0, 3);
+}
+
+/* ============================================
+   CHAMPS DE TEXTE
+   ============================================ */
+.modern-textfield {
+    -fx-background-color: -fx-surface;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12 16 12 16;
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-pref-width: 300px;
+}
+
+.modern-textfield:focused {
+    -fx-border-color: -fx-primary;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(30, 136, 229, 0.2), 8, 0, 0, 0);
+}
+
+/* ============================================
+   BOUTONS RADIO (QCM)
+   ============================================ */
+.modern-radio {
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-font-size: 15px;
+    -fx-text-fill: -fx-text-primary;
+    -fx-padding: 8 0 8 0;
+}
+
+.modern-radio .radio {
+    -fx-background-color: -fx-surface;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}
+
+.modern-radio:selected .radio {
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-primary;
+}
+
+.modern-radio .dot {
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+
+/* ============================================
+   ZONE DE NAVIGATION
+   ============================================ */
+.navigation-box {
+    -fx-background-color: -fx-surface;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 10, 0, 0, -2);
+}
+
+/* ============================================
+   ÉCRAN DE RÉSULTATS
+   ============================================ */
+.results-container {
+    -fx-background-color: -fx-background;
+}
+
+.results-title {
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-success;
+}
+
+.final-score {
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-text-primary;
+    -fx-padding: 10 0 10 0;
+}
+
+.save-message {
+    -fx-text-fill: -fx-text-secondary;
+    -fx-font-style: italic;
+    -fx-font-size: 13px;
+}
+
+.result-correct {
+    -fx-text-fill: -fx-success;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.result-incorrect {
+    -fx-text-fill: -fx-error;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* ============================================
+   SCROLLPANE
+   ============================================ */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: -fx-border-light;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: -fx-surface;
+}
+
+/* ============================================
+   SEPARATOR
+   ============================================ */
+.separator {
+    -fx-background-color: -fx-border-light;
+}

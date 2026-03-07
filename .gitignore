@@ -1,0 +1,11 @@
+# Fichiers compilés (Compiled files)
+*.class
+out/
+target/
+
+# Configuration IntelliJ (IDE settings)
+.idea/
+*.iml
+
+# Autres (Others)
+*.log
