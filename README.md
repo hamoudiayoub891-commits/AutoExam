@@ -107,13 +107,13 @@ Ce projet a été conçu pour démontrer la maîtrise des concepts suivants :
 ## 📸 Aperçus de l'interface (Screenshots)
 
 ### Écran de connexion (Login Screen)
-![Interface de connexion](screenshots/login.png)
+![Interface de connexion](screenshots/LOGIN.png)
 
 ### Passage de l'examen (Exam Interface)
-![Interface d'examen](screenshots/exam.png)
+![Interface d'examen](screenshots/EXAM.png)
 
 ### Gestion des exceptions (Exception Handling)
-![Pop-up d'exception](screenshots/exception.png)
+![Pop-up d'exception](screenshots/EXCEPTION.png)
 
 ---
 
